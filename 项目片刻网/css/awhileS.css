@@ -14,7 +14,7 @@ html,body {
     /*height: 100%;*/
 }
 .out{
-    width:80%;
+    width:90%;
     margin: 0 auto;
 }
 .big{
@@ -28,6 +28,9 @@ html,body {
     float: right;
 }
 
+.clear{
+    overflow: hidden;
+}
 
 /*导航样式*/
 .nav-left{
@@ -52,7 +55,18 @@ html,body {
     text-decoration: none;
     color:black;
     padding: 20px 25px;
+    transition: all 1s;
+    margin :-3px;
 }
+
+.nav-left>a:hover{
+    text-decoration: none;
+    color:black;
+    padding: 20px 25px;
+    background-color: #f5f5f5;
+}
+
+
 .nav-right{
     background: url("../images/QQ20.png") no-repeat left;
     background-size: 50px 50px;
@@ -79,4 +93,148 @@ html,body {
     text-align: center;
     color: #C5E1C9;
     /*margin-top: 10px;*/
+    transition: all 0.5s;
+}
+
+.digest:hover {
+
+    border: 1px solid #C5E1C9;
+    background-color: #5BB76E;
+    padding: 15px 20px;
+    width: 100px;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+/*大图部分样式*/
+
+.PicOut{
+    width:70%;
+    margin: 0 auto;
+}
+.line{
+    width: 10%;
+    height: 2px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+.pic{
+    width: 450px;
+    position: relative;
+    overflow: hidden;
+}
+.picText{
+    background-color: rgba(0,0,0,0.5);
+    width: 94%;
+    height: 15%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+    padding: 3%;
+}
+.pic:hover .picText {
+    display: block;
+}
+.PicOut div img:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+/*阅读样式*/
+.headS{
+    width: 78%;
+    margin: 60px auto;
+}
+.textAll{
+    margin: 10px auto;
+    width:890px;
+    height: 217px;
+    border: 1px solid #E8E8E8;
+}
+.textAll .left>div:first-child>a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+.textAll .left>div{
+    margin: 20px;
+}
+.textAll .left>div:nth-child(4)>a{
+    text-decoration: none;
+    color: #57AD68;
+    display: inline-block;
+    background: url("../images/viewall.png") no-repeat right;
+    background-size: 12px 12px;
+    padding-right: 25px;
+    padding-top: 2px;
+
+}
+.textAll .left .line1{
+    width: 30px;
+    height: 1px;
+    background-color: black;
+}
+.outPIC{
+    display: inline-block;
+    margin:15px ;
+    border: 1px solid #E8E8E8;
+
+}
+.outPIC>div:last-child>a:first-child{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    margin:10px;
+}
+.outPIC>div:last-child>a:nth-child(3){
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    margin:10px;
+    font-size: 14px;
+    /*padding-left: 5px;*/
+}
+.outPIC>div:last-child>span {
+    display: inline-block;
+    color: #000;
+    margin:10px;
+    font-size: 14px;
+}
+.outPIC>div{
+    overflow: hidden;
+}
+.outPIC>div>img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+/*人气片客*/
+.userBg{
+    width: 230px;
+    height: 230px;
+    background:url("../images/user-bg.png") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 30px;
+}
+.userBg>div:first-child {
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-left: 20px;
+
+    vertical-align: middle;
+}
+.userBg>div:last-child>a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000;
+    margin-top: 30px;
+    margin-right: 20px;
 }
